@@ -3,7 +3,7 @@ buildscript {
         mavenCentral()
         maven {
             name = "forge"
-            url = "http://files.minecraftforge.net/maven"
+            url = "https://teamopenindustry.cc/maven/"
         }
         maven {
             name = "sonatype"

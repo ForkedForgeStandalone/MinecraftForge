@@ -4,11 +4,14 @@ buildscript {
         mavenLocal()
         maven {
             name = "forge"
-            url = "http://files.minecraftforge.net/maven"
+            url = "https://teamopenindustry.cc/maven"
         }
         maven {
             name = "sonatype"
             url = "https://oss.sonatype.org/content/repositories/snapshots/"
+        }
+        maven {
+            url = 'https://repo.eclipse.org/content/groups/eclipse'
         }
     }
     dependencies {
@@ -54,9 +57,9 @@ if (project.hasProperty("crowdinKey"))
     tasks.getLocalizations.apiKey = project.crowdinKey
 
 
-launch4j {
+/*launch4j {
     jreMinVersion = '1.6.0'
-}
+}*/
 
 uploadArchives {
     repositories {
